@@ -1,0 +1,46 @@
+@import url("./fonts.css");
+*{
+  box-sizing: border-box;
+}
+.header{  
+  margin: 0 auto;   
+}
+.container{  
+  max-width: 1400px;
+  height: 794px;
+  padding: 0 5px;
+  margin: 0 auto;  
+}
+.header_inner{  
+  position: relative;
+  background-image: url("../images/Star-Wars-Battlefront-II-combat.png");  
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;  
+  max-width: 1400px;
+  height: 788px;  
+}
+.great_word{    
+  font-family: "HelveticaNeue";
+  position: absolute;
+  width: 158px;
+  height: 43px;  
+  font-size: 36px;
+  color: #fff;
+  line-height: 43px;
+  white-space: pre;
+  top: 280px;
+  left: 831px;
+}
+.little_word{
+  font-family: "HelveticaNeue";
+  position: absolute;
+  width: 132px;
+  height: 29px;  
+  font-size: 24px;
+  color: #fff;
+  line-height: 29px;
+  white-space: pre;
+  top: 317px;
+  left: 831px;
+}
