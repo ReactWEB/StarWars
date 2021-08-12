@@ -1,61 +1,108 @@
-@import url("./fonts.css");
-*{
+@import url("./font.css");
+
+* {
   box-sizing: border-box;
 }
-.header{  
-  margin: 0 auto;   
-}
-.container{    
-  max-width: 1400px;  
-  padding: 0 5px;
-  margin: 0 auto;  
-}
-a{
+
+a {
   text-decoration: none;
   display: inline-block;
 }
-.header__inner{      
-  background-image: url("../images/Star-Wars-Battlefront-II-combat.png");  
+
+.container {
+  max-width: 1400px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 0 auto;
+}
+
+.header__inner {
+  background-image: url("../images/Star-Wars-Battlefront-II-combat.png");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   text-align: center;
   padding-top: 206px;
-  padding-bottom: 40px;
-  max-width: 1400px;   
+  padding-bottom: 200px;
 }
-.words{
-  width: 158px;
-  height: 72px;
-  text-align: center;
-  margin-bottom: 100px;
+
+.header__about {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 545px;
+  margin-bottom: 134px;
 }
-.great__word{     
-  font-family: "HelveticaNeue";   
+
+.header__about-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__about div {
+  color: #fff;
+  font-family: "HelveticaNeue";
+}
+
+.header__about-title {
   font-size: 36px;
-  color: #fff;
-  line-height: 43px;
-  white-space: pre;    
+  line-height: 42px;
 }
-.little__word{ 
-  font-family: "HelveticaNeue";   
+
+.header__about-part {
   font-size: 24px;
-  color: #fff;
-  line-height: 29px;
-  white-space: pre;    
+  line-height: 28px;
 }
-button{
-  width: 136px;
-  height: 38px;
+
+.header__btns {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 840px;
+}
+
+.header__btn {
   border-radius: 4px;
-  background-color: #8DD83D;
-  color: #fff;
-  margin-bottom: 353px;
-}
-.btn1, .btn2{  
+  text-align: center;
+  padding: 8px 0px 9px;
   font-family: "HelveticaNeue";
   font-size: 16px;
   line-height: 21px;
-  white-space: pre;
-  text-align: center;
+  color: #fff;
+}
+
+.watch {
+  padding: 8px 19px 9px;
+  background-color: #8dd83d;
+}
+
+.explore {
+  margin-left: 13px;
+  padding: 8px 24px 9px 19px;
+  background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+}
+
+.header__left-arrow {
+  max-width: 135px;
+  background-position: left;
+  position: relative;
+}
+
+.levo {
+  position: absolute;
+  background-image: url("../images/left\ carousel-control.svg");
+}
+
+.header__right-arrow {
+  max-width: 135px;
+  background-position: right;
+  position: relative;
+}
+
+.pravo {
+  position: absolute;
+  background-image: url("../images/right\ carousel-control.svg");
 }
