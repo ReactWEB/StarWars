@@ -1,3 +1,5 @@
+/*GLOBAL*/
+
 @import url("./font.css");
 
 * {
@@ -14,6 +16,100 @@ a {
   padding: 0 5px;
   margin: 0 auto;
 }
+
+/*Menu*/
+
+.menu{
+  margin: 0 auto;
+}
+
+.menu__inner{
+  background-color: #373A3C;    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -116px auto;
+  padding: 0;
+}
+
+.menu__logo img{
+  width: 96px;
+  height: 29px;
+  cursor: pointer;   
+  margin-left: 163px;
+}
+
+.menu__list-items{
+  margin-right: 168px;
+}
+
+.menu__list-items ul{  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list-item{
+  margin-left: 35px;
+  list-style-type: none;
+  transition: all 0.3s ease;
+}
+
+.menu__list-item a{
+  font-family: "HelveticaNeue";
+  font-weight: 51;
+  font-size: 16px;
+  line-height: 16;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 1.1px;
+}
+
+.menu__list-item:nth-child(1) a::after{
+  content: url("../images/down-arrow.svg");
+  margin-right: 20px;
+  margin-top: 20px;
+  padding-left: 7px;
+}
+
+.menu__list-item:nth-child(2) a::after{
+  content: url("../images/down-arrow.svg");
+  padding-left: 7px;
+}
+
+.account::before{
+  content: url("../images/Shape.svg");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  left: -25px;
+}
+
+.account::after{
+  content: url("../images/down-arrow.svg");
+  position: absolute;
+  top: 0;
+  right: -25px;
+}
+
+.account{
+  margin-top: 5px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.menu__list-item a:hover{
+  color: #fff;
+}
+
+.menu__list-search input{
+  font-family: "HelveticaNeue";
+  color: #435766;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/*Header*/
 
 .header {
   margin: 0 auto;
