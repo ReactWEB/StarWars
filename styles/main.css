@@ -27,9 +27,8 @@ a {
   background-color: #373A3C;    
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: -116px auto;
-  padding: 0;
+  align-items: center; 
+  padding: 0 163;
 }
 
 .menu__logo img{
@@ -38,9 +37,8 @@ a {
   cursor: pointer;   
   margin-left: 163px;
 }
-
 .menu__list-items{
-  margin-right: 168px;
+  margin-right: 163px;
 }
 
 .menu__list-items ul{  
@@ -56,10 +54,9 @@ a {
 }
 
 .menu__list-item a{
-  font-family: "HelveticaNeue";
-  font-weight: 51;
+  font-family: "HelveticaNeue";  
   font-size: 16px;
-  line-height: 16;
+  line-height: 16px;
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: 1.1px;
 }
@@ -81,7 +78,7 @@ a {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 4px;
+  top: -3px;
   left: -25px;
 }
 
@@ -201,4 +198,94 @@ a {
 .pravo {
   position: absolute;
   background-image: url("../images/right\ carousel-control.svg");
+}
+
+/*highlight*/
+
+.highlight{
+  margin: 0 auto;  
+}
+.highlight__inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #373a3c;
+}
+.highlight__upside{
+  margin: 0 auto 30px;
+  align-items: center;
+}
+.highlight__inner-logo img{  
+  margin-top: 64px;
+  margin-bottom: 16px;
+  color: #fff;
+  width: 64px;
+  height: 64px;  
+}
+.highlight__inner-text{
+  font-family: "HelveticaNeue";
+  color: #fff;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 10px;
+}
+.highlight__inner-title{
+  font-family: "HelveticaNeue";
+  color: #fff;
+  font-size: 36px;
+  line-height: 42px;
+}
+.highlight__card-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 162px 162px;
+}
+.highlight__card-item{
+  flex-direction: column;
+  text-align: left;
+  border: 1px solid #8DD83D;
+  width: 320px; 
+  background-color: #fff;
+}
+.highlight__card-item img{
+  text-align: left;
+  margin-bottom: 15px;   
+}
+.highlight__card-title{
+  font-family: "HelveticaNeue";
+  color: #435766;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 13px;
+  padding-left: 22px;
+}
+.highlight__card-text{
+  font-family: "HelveticaNeue";
+  color: #435766;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 38px;
+  padding-left: 22px; 
+}
+.highlight__card-btn{
+  width: 278px;
+  height: 60px;
+  background-color: #8DD83D;  
+  border-radius: 4px;
+  margin-bottom: 27px;
+  margin-left: 22px;
+}
+.highlight__card-btn a{
+  font-family: "HelveticaNeue";
+  color: #fff;
+  font-size: 16px;
+  line-height: 21px;
+  padding-top: 19px;
+  padding-left: 18px;
+
+}
+.highlight__card-item + .highlight__card-item{
+  margin-left: 64px;
 }
