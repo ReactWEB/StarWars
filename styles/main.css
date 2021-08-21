@@ -29,26 +29,21 @@ a {
   margin: 0 auto;
 }
 
-.menu__inner {
-  background-color: #373A3C;
+.menu__inner {  
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center;  
+  background-color: #373A3C;
 }
 
 .menu__logo {
   width: 96px;
   height: 29px;
-  /*padding-left: 163px;*/
 }
 
 .menu__logo img {
   cursor: pointer;
 }
-
-/*.menu__list-items {
-  padding-right: 163px;
-}*/
 
 .menu__list-items ul {
   display: flex;
@@ -109,10 +104,12 @@ a {
 }
 
 .menu__list-search input {
+  width: 210px;
+  height: 38px;
   font-family: "HelveticaNeue";
   color: #435766;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 21px;  
 }
 
 /*Header*/
@@ -142,6 +139,7 @@ a {
 .header__about-inner {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .header__about div {
@@ -293,41 +291,190 @@ a {
 
 /*games*/
 
-.games{
+.games {
   margin: 0 auto;
 }
-.games__inner{
+
+.games__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url("../images/rectangle-bg.png");
 }
-.games__upside{
+
+.games__upside {
   padding-top: 97px;
   padding-bottom: 28px;
 }
-.games__upside-inner-text{
+
+.games__upside-inner-text {
   font-family: "HelveticaNeue";
   color: #fff;
   font-size: 36px;
   line-height: 42px;
 }
-.games__center{
+
+.games__center {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
-  padding-bottom: 30px;  
+  padding-bottom: 30px;
 }
-.games__center-card1{
-  width: 320px;    
+
+.games__center-box+.games__center-box {
+  margin-left: 16px;
 }
-.games__center-card2{
-  width: 352px;  
-}
-.games__center-card3{
+
+.games__center-card1,
+.games__center-card3 {
   width: 320px;
+  border: 1px solid #8DD83D;
+  background-color: #eaeaea;
 }
-.games__downside{
+
+.games__center-card1 img,
+.games__center-card3 img {
+  margin-bottom: 21px;
+}
+
+.games__center-card1-title,
+.games__center-card2-title,
+.games__center-card3-title {
+  font-family: "HelveticaNeue";
+  color: #435766;
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 21px;
+}
+
+.games__center-card1-title {
+  margin-bottom: 16px;
+}
+
+.games__center-card1-text {
+  font-family: "HelveticaNeue";
+  color: #435766;
+  font-size: 21px;
+  line-height: 25px;
+  padding-left: 21px;
+  margin-bottom: 43px;
+}
+
+.games__center-card1-btn,
+.games__center-card2-btn,
+.games__center-card3-btn {
+  width: 278px;
+  height: 60px;
+  border-radius: 4px;
+  background-color: #8DD83D;
+  font-family: "HelveticaNeue";
+  color: #fff;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.games__center-card1-btn,
+.games__center-card3-btn {
+  margin-bottom: 27px;
+  margin-left: 21px;
+}
+
+.games__center-card2 {
+  width: 326px;
+  border: 1px solid #8DD83D;
+  background-color: #fff;
+}
+
+.games__center-card2 img {
+  width: 324px;
+  margin-bottom: 25px;
+}
+
+.games__center-card2-title {
+  margin-bottom: 121px;
+}
+
+.games__center-card2-btn {
+  margin-bottom: 30px;
+  margin-left: 23px;
+}
+
+.games__center-card3-title {
+  margin-bottom: 109px;
+}
+
+.games__downside {
   padding-bottom: 140px;
+}
+
+.games__downside-inner-btn {
+  width: 207px;
+  height: 53px;
+  border-radius: 4px;
+  background: linear-gradient(#686C6F, #373A3C);
+  font-family: "HelveticaNeue";
+  color: #fff;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+/*deslab*/
+
+.deslab {
+  margin: 0 auto;
+}
+
+.deslab__inner {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  align-content: flex-start;
+  text-align: left;
+  background-image: url("../images/deslab-bg.png");
+}
+
+.deslabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  margin-top: 114px;
+  padding-left: 167px;
+}
+
+.deslab__title {
+  font-family: "HelveticaNeue";
+  color: #fff;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 9px;
+}
+
+.deslab__text {
+  font-family: "HelveticaNeue";
+  color: #fff;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 37px;
+}
+
+.deslab__buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 145px;
+}
+
+.deslab__buttons-btn {
+  background: linear-gradient(#686C6F, #373A3C);
+  border-radius: 4px;
+  font-family: "HelveticaNeue";
+  color: #fff;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 20px 60px;
+}
+
+.deslab__buttons-btn:nth-child(2) {
+  margin-left: 15px;
 }
