@@ -22,6 +22,11 @@ a {
   padding: 0 5px;
   margin: 0 auto;
 }
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 /*Menu*/
 
@@ -426,8 +431,7 @@ a {
 
 .deslab__inner {
   display: flex;
-  flex-direction: column;
-  /*align-items: center;*/
+  flex-direction: column;  
   align-content: flex-start;
   text-align: left;
   background-image: url("../images/deslab-bg.png");
@@ -477,4 +481,75 @@ a {
 
 .deslab__buttons-btn:nth-child(2) {
   margin-left: 15px;
+}
+
+/*footer*/
+
+.footer{
+  margin: 0 auto;  
+}
+.footer__main-inner{
+  display: flex;
+  flex-direction: column;
+  background-color: #373A3C;  
+}
+.footer__main-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 93%;
+  padding-left: 100px;
+  padding-top: 58px;
+  padding-bottom: 49px;
+}
+.footer__xbox{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 65px;
+}
+.footer__xbox-title,
+.footer__dev-title,
+.footer__social-title{
+  padding-bottom: 29px;
+  color: #7DD42F;
+  font-family: "HelveticaNeue";  
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+}
+.footer__xbox-menu a, 
+.footer__dev-menu a{
+  color: #fff;
+  font-family: "HelveticaNeue";  
+  font-size: 14px;  
+  line-height: 16.41px;
+  padding-bottom: 29px;
+}
+.hr{  
+  width: 1200px;
+  height: 2px;
+  color: #5a5c5e; 
+}
+
+.footer__inner{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -50px;
+  padding-bottom: 38px;
+}
+.footer__inner-lang{
+  text-align: left;
+}
+.footer__inner-micros{
+  text-align: right;
+}
+.footer__inner-lang, 
+.footer__inner-micros{
+  color: #fff;
+  font-family: "HelveticaNeue";  
+  font-size: 16px;  
+  line-height: 18.75px;
 }
